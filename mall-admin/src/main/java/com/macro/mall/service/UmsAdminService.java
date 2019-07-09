@@ -1,5 +1,6 @@
 package com.macro.mall.service;
 
+import com.macro.mall.dto.UmsAdminLoginParam;
 import com.macro.mall.dto.UmsAdminParam;
 import com.macro.mall.model.UmsAdmin;
 import com.macro.mall.model.UmsPermission;
@@ -26,4 +27,13 @@ public interface UmsAdminService {
      * */
     UmsAdmin register(UmsAdminParam param);
 
+    /**
+     * 登录功能
+     * */
+    String login(String username, String password);
+
+    /**
+     * 刷新token的功能
+     */
+    String refreshToken(String token);
 }
