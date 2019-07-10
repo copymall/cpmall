@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
@@ -21,6 +22,7 @@ import java.util.Date;
 /**
  * oss上传管理Service实现类
  */
+@Service
 public class OssServiceImpl implements OssService {
     private static final Logger LOGGER = LoggerFactory.getLogger(OssServiceImpl.class);
     @Value("${aliyun.oss.policy.expire}")
