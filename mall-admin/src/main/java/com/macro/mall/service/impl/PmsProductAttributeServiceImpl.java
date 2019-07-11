@@ -91,6 +91,6 @@ public class PmsProductAttributeServiceImpl implements PmsProductAttributeServic
 
     @Override
     public List<ProductAttrInfo> getProductAttrInfo(Long productCategoryId) {
-        return productAttributeDao.getProductAttrInfo(productCategoryId);;
+        return productAttributeDao.getProductAttrInfo(productCategoryId);
     }
 }
