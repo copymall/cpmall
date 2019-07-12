@@ -43,5 +43,5 @@ public interface SmsFlashPromotionService {
     /**
      * 分页查询活动
      */
-    List<SmsFlashPromotion> list(String keyword);
+    List<SmsFlashPromotion> list(String keyword,Integer pageSize, Integer pageNum);
 }
